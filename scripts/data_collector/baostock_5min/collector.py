@@ -307,7 +307,7 @@ class Run(BaseRun):
         qlib_data_1d_dir cannot be None, normalize 5min needs to use 1d data;
 
             qlib_data_1d can be obtained like this:
-                $ python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --interval 1d --region cn --version v3
+                $ python scripts/get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --interval 1d --region cn --version v3
             or:
                 download 1d data, reference: https://github.com/microsoft/qlib/tree/main/scripts/data_collector/yahoo#1d-from-yahoo
 

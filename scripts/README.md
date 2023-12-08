@@ -16,29 +16,29 @@
 
 ```bash
 # daily data
-python get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --region cn
+python get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --region cn
 
 # 1min  data (Optional for running non-high-frequency strategies)
-python get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data_1min --region cn --interval 1min
+python get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data_1min --region cn --interval 1min
 ```
 
 ### Download US Data
 
 
 ```bash
-python get_data.py qlib_data --target_dir ~/.qlib/qlib_data/us_data --region us
+python get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/us_data --region us
 ```
 
 ### Download CN Simple Data
 
 ```bash
-python get_data.py qlib_data --name qlib_data_simple --target_dir ~/.qlib/qlib_data/cn_data --region cn
+python get_base_data.py qlib_data --name qlib_data_simple --target_dir ~/.qlib/qlib_data/cn_data --region cn
 ```
 
 ### Help
 
 ```bash
-python get_data.py qlib_data --help
+python get_base_data.py qlib_data --help
 ```
 
 ## Using in Qlib

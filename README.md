@@ -189,10 +189,10 @@ Load and prepare data by running the following code:
 
   ```bash
   # get 1d data
-  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --region cn
+  python scripts/get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data --region cn
 
   # get 1min data
-  python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data_1min --region cn --interval 1min
+  python scripts/get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/cn_data_1min --region cn --interval 1min
 
   ```
 

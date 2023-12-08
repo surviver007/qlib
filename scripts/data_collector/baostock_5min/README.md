@@ -14,7 +14,7 @@
   - examples:
     ```bash
     # hs300 5min
-    python scripts/get_data.py qlib_data --target_dir ~/.qlib/qlib_data/hs300_data_5min --region hs300 --interval 5min
+    python scripts/get_base_data.py qlib_data --target_dir ~/.qlib/qlib_data/hs300_data_5min --region hs300 --interval 5min
     ```
     
 ### Collector *Baostock high frequency* data to qlib
