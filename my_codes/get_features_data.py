@@ -9,6 +9,7 @@ qlib.init(provider_uri=provider_uri)
 
 
 if __name__ == '__main__':
+    """获取因子数据，并计算因子间的相关性"""
     # 获取全部股票标的
     instruments = D.instruments(market='all')
 

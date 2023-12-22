@@ -6,9 +6,10 @@ from qlib.data.dataset.loader import QlibDataLoader, StaticDataLoader
 
 
 if __name__ == '__main__':
+    """获取股票的基础数据，和一些简单的自定义因子"""
     # 基础参数
-    start_time = '20230101'
-    end_time = '20231020'
+    start_time = '20130101'
+    end_time = '20231201'
     # instruments = ['000001.SZ', '000002.SZ']
     fields = ['$open', '$high', '$low', '$close', '$volume', '$amount', 'EMA($close, 10)', 'EMA($close, 30)']
     names = ['open', 'high', 'low', 'close', 'volume', 'amount', 'EMA10', 'EMA30']
@@ -27,15 +28,15 @@ if __name__ == '__main__':
     instruments = D.instruments(market='all')
 
     # 获取基础数据(D无法给fields的名字进行命名，dataloader可以)
-    df = D.features(
-        instruments=instruments,
-        fields=fields,
-        start_time=start_time,
-        end_time=end_time,
-        freq=freq
-    )
+    # df = D.features(
+    #     instruments=instruments,
+    #     fields=fields,
+    #     start_time=start_time,
+    #     end_time=end_time,
+    #     freq=freq
+    # )
 
     # ==================================================
     # 通过dataloader获取数据和因子
-    # qd = QlibDataLoader(config = (fields, names))
-    # data = qd.load(instruments=instruments, start_time=start_time, end_time=end_time)
+    qd = QlibDataLoader(config = (fields, names))
+    data = qd.load(instruments=instruments, start_time=start_time, end_time=end_time)
